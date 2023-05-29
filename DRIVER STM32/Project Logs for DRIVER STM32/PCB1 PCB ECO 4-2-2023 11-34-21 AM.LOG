@@ -1,0 +1,100 @@
+Removed Pin From Net: NetName=3.3 Pin=*-20
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=3.3 Pin=C1-2
+Removed Pin From Net: NetName=+5 Pin=C3-1
+Removed Pin From Net: NetName=NetC3_2 Pin=C3-2
+Removed Pin From Net: NetName=+5 Pin=C4-1
+Removed Pin From Net: NetName=NetC3_2 Pin=C4-2
+Removed Pin From Net: NetName=3.3 Pin=C5-1
+Removed Pin From Net: NetName=NetC3_2 Pin=C5-2
+Removed Pin From Net: NetName=3.3 Pin=C6-1
+Removed Pin From Net: NetName=NetC3_2 Pin=C6-2
+Removed Pin From Net: NetName=+5 Pin=C7-1
+Removed Pin From Net: NetName=NetC7_2 Pin=C7-2
+Removed Pin From Net: NetName=+5 Pin=C8-1
+Removed Pin From Net: NetName=NetC7_2 Pin=C8-2
+Removed Pin From Net: NetName=3.3 Pin=C9-1
+Removed Pin From Net: NetName=NetC7_2 Pin=C9-2
+Removed Pin From Net: NetName=3.3 Pin=C10-1
+Removed Pin From Net: NetName=NetC7_2 Pin=C10-2
+Removed Pin From Net: NetName=3.3 Pin=DIO1-1
+Removed Pin From Net: NetName=+5 Pin=DIO1-2
+Removed Pin From Net: NetName=3.3 Pin=DIO2-1
+Removed Pin From Net: NetName=+5 Pin=DIO2-2
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=3.3 Pin=U1-2
+Removed Pin From Net: NetName=+5 Pin=U1-3
+Removed Pin From Net: NetName=GND Pin=U2-1
+Removed Pin From Net: NetName=3.3 Pin=U2-2
+Removed Pin From Net: NetName=+5 Pin=U2-3
+Removed Member From Class: ClassName=Sheet1 Member=C1
+Removed Member From Class: ClassName=Sheet1 Member=C3
+Removed Member From Class: ClassName=Sheet1 Member=C4
+Removed Member From Class: ClassName=Sheet1 Member=C5
+Removed Member From Class: ClassName=Sheet1 Member=C6
+Removed Member From Class: ClassName=Sheet1 Member=C7
+Removed Member From Class: ClassName=Sheet1 Member=C8
+Removed Member From Class: ClassName=Sheet1 Member=C9
+Removed Member From Class: ClassName=Sheet1 Member=C10
+Removed Member From Class: ClassName=Sheet1 Member=DIO1
+Removed Member From Class: ClassName=Sheet1 Member=DIO2
+Removed Member From Class: ClassName=Sheet1 Member=U1
+Removed Member From Class: ClassName=Sheet1 Member=U2
+Added Component: Designator=R1(R1/6W)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=R2(R1/6W)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=R3(R1/6W)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=RS485(BIG_Header 3)
+Added Component: Designator=TTL TO RS485(TTL TO RS485)
+Added Component: Designator=UART(HDR4)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*_25 Pin=R1-1
+Added Pin To Net: NetName=Net*_26 Pin=R2-1
+Added Pin To Net: NetName=Net*_27 Pin=R3-1
+Added Pin To Net: NetName=NetC7_2 Pin=RS485-1
+Added Pin To Net: NetName=NetC3_2 Pin=RS485-2
+Added Pin To Net: NetName=3.3 Pin=RS485-3
+Added Pin To Net: NetName=+5 Pin=TTL TO RS485-1
+Added Pin To Net: NetName=+5 Pin=TTL TO RS485-1
+Added Pin To Net: NetName=Net*_33 Pin=TTL TO RS485-2
+Added Pin To Net: NetName=Net*_33 Pin=TTL TO RS485-2
+Added Pin To Net: NetName=Net*_34 Pin=TTL TO RS485-3
+Added Pin To Net: NetName=Net*_34 Pin=TTL TO RS485-3
+Added Pin To Net: NetName=GND Pin=TTL TO RS485-4
+Added Pin To Net: NetName=GND Pin=TTL TO RS485-4
+Added Pin To Net: NetName=NetC7_2 Pin=TTL TO RS485-5
+Added Pin To Net: NetName=NetC7_2 Pin=TTL TO RS485-5
+Added Pin To Net: NetName=NetC3_2 Pin=TTL TO RS485-6
+Added Pin To Net: NetName=NetC3_2 Pin=TTL TO RS485-6
+Added Pin To Net: NetName=3.3 Pin=TTL TO RS485-7
+Added Pin To Net: NetName=3.3 Pin=TTL TO RS485-7
+Added Pin To Net: NetName=+5 Pin=UART-1
+Added Pin To Net: NetName=GND Pin=UART-2
+Added Pin To Net: NetName=Net*_34 Pin=UART-3
+Added Pin To Net: NetName=Net*_33 Pin=UART-4
+Change Net Name : Old Net Name=3.3 New Net Name=NetRS485_3
+Change Net Name : Old Net Name=NetC3_2 New Net Name=NetRS485_2
+Change Net Name : Old Net Name=NetC7_2 New Net Name=NetRS485_1
+Added Pin To Net: NetName=NetLED1_1 Pin=R1-2
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=NetLED2_1 Pin=R2-2
+Added Net: Name=NetLED2_1
+Added Pin To Net: NetName=NetLED3_1 Pin=R3-2
+Added Net: Name=NetLED3_1
+Added Member To Class: ClassName=Sheet1 Member=Component R1 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R2 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R3 1k
+Added Member To Class: ClassName=Sheet1 Member=Component RS485 BIG_Header 3
+Added Member To Class: ClassName=Sheet1 Member=Component TTL TO RS485
+Added Member To Class: ClassName=Sheet1 Member=Component UART Header4
+Added Room: Name=Sheet1

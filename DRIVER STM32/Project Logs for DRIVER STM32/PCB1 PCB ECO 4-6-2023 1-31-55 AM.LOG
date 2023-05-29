@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetRS485_1 Pin=TTL TO RS485-5
+Removed Pin From Net: NetName=NetRS485_1 Pin=TTL TO RS485-5
+Removed Pin From Net: NetName=NetRS485_3 Pin=TTL TO RS485-7
+Removed Pin From Net: NetName=NetRS485_3 Pin=TTL TO RS485-7
+Added Pin To Net: NetName=NetRS485_3 Pin=TTL TO RS485-5
+Added Pin To Net: NetName=NetRS485_3 Pin=TTL TO RS485-5
+Added Pin To Net: NetName=NetRS485_1 Pin=TTL TO RS485-7
+Added Pin To Net: NetName=NetRS485_1 Pin=TTL TO RS485-7
+Added Member To Class: ClassName=Sheet1 Member=Component TTL TO RS485

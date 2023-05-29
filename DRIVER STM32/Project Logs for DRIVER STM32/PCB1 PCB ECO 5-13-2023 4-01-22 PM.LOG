@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=NetRL1_1 Pin=RL1-1
+Removed Pin From Net: NetName=GND Pin=RL1-2
+Removed Pin From Net: NetName=+12 Pin=RL1-3
+Added Component: Designator=MOTOR(Medium - Header 3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetRL1_1 Pin=MOTOR-3
+Added Pin To Net: NetName=NetRL1_1 Pin=RL1-3
+Change Net Name : Old Net Name=NetRL1_1 New Net Name=NetMOTOR_3
+Added Pin To Net: NetName=NetMOTOR_1 Pin=MOTOR-1
+Added Pin To Net: NetName=NetMOTOR_1 Pin=RL1-2
+Added Net: Name=NetMOTOR_1
+Added Pin To Net: NetName=NetMOTOR_2 Pin=MOTOR-2
+Added Pin To Net: NetName=NetMOTOR_2 Pin=RL1-1
+Added Net: Name=NetMOTOR_2
+Added Member To Class: ClassName=Sheet1 Member=Component MOTOR Header 3 - M
+Added Room: Name=Sheet1

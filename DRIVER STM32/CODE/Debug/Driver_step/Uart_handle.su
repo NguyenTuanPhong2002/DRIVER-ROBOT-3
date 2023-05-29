@@ -1,0 +1,2 @@
+../Driver_step/Uart_handle.c:10:6:UART_Init	16	static
+../Driver_step/Uart_handle.c:15:6:UART_Handle	48	static

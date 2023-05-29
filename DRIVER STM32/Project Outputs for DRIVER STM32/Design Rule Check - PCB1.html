@@ -1,0 +1,375 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5/13/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4:31:26 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc" class="file"><acronym title="F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc">F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">9</td></tr>
+</table>
+</td>
+</table><a name="IDYCL2RBO1ZM2OGT4TSR4FLKWBENPHYL2FLRBY35JT5UP5SZDHHKLI"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM30AMYMVWZN2GKTX114S2DCYFLWG03CQ3CXX54KDMFVVYBS44QGP">Clearance Constraint (Gap=0.6mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFKCLSW5TO4ABH0M04BWGQDBDUGF0OASCUY3D33CIECMEHUT2JQRE">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1VOKR1WAPKOVIMYMYBVI3033NIT5YAP3RNMI4KFGWWHYXV0BMNOJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPWIGOINX3ETEPEF0OLKXW50YYLPV1MDYKKFIGRBMOH12MNOCU14C">Un-Connected Pin Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUBUFBQ2HQP5VKKLAU5CI5RNAUHMR55UT40QSQQD1Q0ZKHCUPZ4II">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLFHQRROJKG5ZMHMUH00GJ0KLTEWIOO3OA2VUZVB4AEOWTDPAV02">Width Constraint (Min=0.254mm) (Max=5mm) (Preferred=1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM1IWE3APMCDMF3JFEC1MIPLKBFQWBT4340ATDED2P34GH2RPGRD">SMD To Corner (Distance=0.8mm) (All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ3RWYE1KH1EZH0QWOMTD2JWVOKVJ5JPXZRFIFQHQ54M5B4TUJ3JL">SMD To Plane Constraint (Distance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID20GM2JA3GNFDKFHDDVPZSNISWVSXBCPVCNBPMD2XJPLS3QRMU4J">SMD Neck-Down Constraint (Percent=30%) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL5NMRK13ADGICELPMZEEHQ53QDHQBDPIOGIDWQE5H1CWCKGR3GVB">SMD Entry (Side = Allowed) (Corner = Allowed) (Any Angle = Not Allowed) (Ignore First Corner = Allowed)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDK2BHGJGZZ0JPH5VYBFIS2RW3SJSSURLIIVNIXWLR1ZLFZCH5LLDI">Power Plane Connect Rule(Relief Connect )(Expansion=1mm) (Conductor Width=1mm) (Air Gap=1mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4L2ORH20VV4NEYUEUHV0QSILGFCQAARBUJHAKNHPINELSUVFKAKH">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID33I41M4RPW15IHOCMJTU4YR4EG4AUYM0PRD1EYF0WWZ5JPOQUVVC">Hole To Hole Clearance (Gap=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO1Q5TPIF2AFBLISKIDUO3CKYTGTCLCDB1QU1ICL34DI4X0JRPVYJ">Minimum Solder Mask Sliver (Gap=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMJVQETM5OBYXD10N4FDAOMHG3HZVS44B0IU2WFIEMWIVWDPJQCBK">Silk To Solder Mask (Clearance=0mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDER1F4J5DVA3S41AZJ2RER0UBTF3SPPXCER0OF1BYLGYIN5ZZII">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5M5O3PSG4VT1B5GMV0BZJH2QWBCB1G05U4X35POWBFGR3VFHKI1">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEUJIWI0LOQBIIZATIY5N5V0FMKLFPIXO3U5HCEMAUIMPMU25ETI">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">9</td>
+</tr>
+</table><br><a name="IDM1IWE3APMCDMF3JFEC1MIPLKBFQWBT4340ATDED2P34GH2RPGRD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD To Corner (Distance=0.8mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2216.487mil|Location2.X=2223.787mil|Location1.Y=3486.094mil|Location2.Y=3493.394mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2216.487mil|Location2.X=2223.787mil|Location1.Y=3486.094mil|Location2.Y=3493.394mil|Absolute=True">SMD To Corner Constraint: (0.696mm &lt; 0.8mm) Between Pad *-11(54.8mm,88.54mm) on Multi-Layer And Track (54.899mm,88.639mm)(56.739mm,88.639mm) on Bottom Layer Actual Distance = 0.696mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.653mil|Location2.X=2217.952mil|Location1.Y=3582.177mil|Location2.Y=3589.476mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2210.653mil|Location2.X=2217.952mil|Location1.Y=3582.177mil|Location2.Y=3589.476mil|Absolute=True">SMD To Corner Constraint: (0.373mm &lt; 0.8mm) Between Pad *-12(54.8mm,91.08mm) on Multi-Layer And Track (54.8mm,91.08mm)(56.43mm,91.08mm) on Bottom Layer Actual Distance = 0.373mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2093.269mil|Location2.X=2100.568mil|Location1.Y=2582.177mil|Location2.Y=2589.476mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2093.269mil|Location2.X=2100.568mil|Location1.Y=2582.177mil|Location2.Y=2589.476mil|Absolute=True">SMD To Corner Constraint: (0.563mm &lt; 0.8mm) Between Pad *-2(54.8mm,65.68mm) on Multi-Layer And Track (52.98mm,65.68mm)(54.8mm,65.68mm) on Bottom Layer Actual Distance = 0.563mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2697.206mil|Location2.X=2704.505mil|Location1.Y=3582.177mil|Location2.Y=3589.476mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2697.206mil|Location2.X=2704.505mil|Location1.Y=3582.177mil|Location2.Y=3589.476mil|Absolute=True">SMD To Corner Constraint: (0.343mm &lt; 0.8mm) Between Pad *-27(70.04mm,91.08mm) on Multi-Layer And Track (68.43mm,91.08mm)(70.04mm,91.08mm) on Bottom Layer Actual Distance = 0.343mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2094.45mil|Location2.X=2101.749mil|Location1.Y=2882.177mil|Location2.Y=2889.476mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2094.45mil|Location2.X=2101.749mil|Location1.Y=2882.177mil|Location2.Y=2889.476mil|Absolute=True">SMD To Corner Constraint: (0.483mm &lt; 0.8mm) Between Pad *-5(54.8mm,73.3mm) on Multi-Layer And Track (53.05mm,73.3mm)(54.8mm,73.3mm) on Bottom Layer Actual Distance = 0.483mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4260.799mil|Location2.X=4268.809mil|Location1.Y=1353.161mil|Location2.Y=1361.242mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4260.799mil|Location2.X=4268.809mil|Location1.Y=1353.161mil|Location2.Y=1361.242mil|Absolute=True">SMD To Corner Constraint: (0.093mm &lt; 0.8mm) Between Pad MOTOR-1(109.6mm,33.43mm) on Multi-Layer And Track (108.284mm,34.496mm)(109.35mm,33.43mm) on Bottom Layer Actual Distance = 0.093mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2857.079mil|Location2.X=2864.378mil|Location1.Y=2097.664mil|Location2.Y=2104.963mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2857.079mil|Location2.X=2864.378mil|Location1.Y=2097.664mil|Location2.Y=2104.963mil|Absolute=True">SMD To Corner Constraint: (0.024mm &lt; 0.8mm) Between Pad R3-2(73.15mm,52.535mm) on Multi-Layer And Track (72.662mm,53.267mm)(72.662mm,53.385mm) on Bottom Layer Actual Distance = 0.024mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.484mil|Location2.X=3282.784mil|Location1.Y=4238.153mil|Location2.Y=4245.452mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.484mil|Location2.X=3282.784mil|Location1.Y=4238.153mil|Location2.Y=4245.452mil|Absolute=True">SMD To Corner Constraint: (0.386mm &lt; 0.8mm) Between Pad TTL TO RS485-2(83.29mm,106.78mm) on Multi-Layer And Track (83.29mm,106.78mm)(83.29mm,107.935mm) on Bottom Layer Actual Distance = 0.386mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.484mil|Location2.X=3282.784mil|Location1.Y=4207.894mil|Location2.Y=4215.193mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\PLC NEXT\DRIVER STM32\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3275.484mil|Location2.X=3282.784mil|Location1.Y=4207.894mil|Location2.Y=4215.193mil|Absolute=True">SMD To Corner Constraint: (0.386mm &lt; 0.8mm) Between Pad TTL TO RS485-2(83.29mm,107.935mm) on Multi-Layer And Track (83.29mm,106.78mm)(83.29mm,107.935mm) on Bottom Layer Actual Distance = 0.386mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

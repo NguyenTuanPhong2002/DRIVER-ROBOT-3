@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Net*_8 Pin=DRIVER2-2
+Removed Pin From Net: NetName=Net*_7 Pin=DRIVER2-4
+Added Pin To Net: NetName=Net*_7 Pin=DRIVER2-2
+Added Pin To Net: NetName=Net*_8 Pin=DRIVER2-4

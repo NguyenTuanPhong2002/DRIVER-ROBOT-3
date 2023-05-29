@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=Net*_4 Pin=*-4
+Added Pin To Net: NetName=Net*_4 Pin=DRIVER3-2
+Added Net: Name=Net*_4
+Added Pin To Net: NetName=Net*_5 Pin=*-5
+Added Pin To Net: NetName=Net*_5 Pin=DRIVER3-6
+Added Net: Name=Net*_5
+Added Pin To Net: NetName=Net*_6 Pin=*-6
+Added Pin To Net: NetName=Net*_6 Pin=DRIVER3-4
+Added Net: Name=Net*_6
+Added Room: Name=Sheet1

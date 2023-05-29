@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Net*_13 Pin=DRIVER 3-1
+Removed Pin From Net: NetName=Net*_37 Pin=DRIVER 3-3
+Added Pin To Net: NetName=Net*_37 Pin=DRIVER 3-1
+Added Pin To Net: NetName=Net*_13 Pin=DRIVER 3-3
+Added Room: Name=Sheet1

@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=Net*_25 Pin=R1-1
+Removed Pin From Net: NetName=NetLED1_1 Pin=R1-2
+Removed Pin From Net: NetName=Net*_26 Pin=R2-1
+Removed Pin From Net: NetName=NetLED2_1 Pin=R2-2
+Removed Pin From Net: NetName=Net*_27 Pin=R3-1
+Removed Pin From Net: NetName=NetLED3_1 Pin=R3-2
+Change Component Footprint: Designator=R1 Old Footprint=R1/6W New Footprint=R1/4W1
+Change Component Footprint: Designator=R2 Old Footprint=R1/6W New Footprint=R1/4W1
+Change Component Footprint: Designator=R3 Old Footprint=R1/6W New Footprint=R1/4W1
+Change Component Comment : Designator=R1 Old Comment=1k New Comment=Res1
+Change Component Comment : Designator=R2 Old Comment=1k New Comment=Res1
+Change Component Comment : Designator=R3 Old Comment=1k New Comment=Res1
+Change component parameters: Designator = "R1" ("R1"); Footprint = "R1/6W"; UniqueID = "\HEKDMCLJ" ("\HEKDMCLJ")
+Change component parameters (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SubClass"; Value = "Resistor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "R1/6W"; UniqueID = "\TPHPBBVB" ("\TPHPBBVB")
+Change component parameters (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SubClass"; Value = "Resistor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "R1/6W"; UniqueID = "\JXBLQILI" ("\JXBLQILI")
+Change component parameters (AddParameter): Name = "Class"; Value = "Passive"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Generic Components"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "08/06/2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Hobart Technology Centre"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SubClass"; Value = "Resistor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetLED1_1 Pin=R1-1
+Added Pin To Net: NetName=Net*_25 Pin=R1-2
+Added Pin To Net: NetName=NetLED2_1 Pin=R2-1
+Added Pin To Net: NetName=Net*_26 Pin=R2-2
+Added Pin To Net: NetName=NetLED3_1 Pin=R3-1
+Added Pin To Net: NetName=Net*_27 Pin=R3-2
+Added Room: Name=Sheet1

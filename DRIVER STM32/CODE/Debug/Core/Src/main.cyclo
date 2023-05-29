@@ -1,0 +1,13 @@
+main.c:115:6:ADC_Select_CH3	2
+main.c:125:6:ADC_Select_CH4	2
+main.c:135:6:ADC_Select_CH5	2
+main.c:145:6:HAL_UART_RxCpltCallback	14
+main.c:260:5:main	10
+main.c:441:6:SystemClock_Config	4
+main.c:483:13:MX_ADC1_Init	3
+main.c:527:13:MX_TIM1_Init	4
+main.c:573:13:MX_TIM2_Init	6
+main.c:628:13:MX_TIM3_Init	7
+main.c:687:13:MX_USART1_UART_Init	2
+main.c:718:13:MX_GPIO_Init	1
+main.c:782:6:Error_Handler	1

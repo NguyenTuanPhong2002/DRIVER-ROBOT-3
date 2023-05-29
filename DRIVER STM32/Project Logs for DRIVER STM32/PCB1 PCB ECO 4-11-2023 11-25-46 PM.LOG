@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetDRIVER1_4 Pin=DRIVER1-4
+Removed Pin From Net: NetName=NetDRIVER1_6 Pin=DRIVER1-6
+Removed Pin From Net: NetName=NetDRIVER2_4 Pin=DRIVER2-4
+Added Pin To Net: NetName=NetDRIVER2_4 Pin=*-13
+Added Pin To Net: NetName=NetDRIVER1_6 Pin=*-14
+Added Pin To Net: NetName=NetDRIVER1_4 Pin=*-15
+Added Pin To Net: NetName=NetDRIVER1_6 Pin=DRIVER1-4
+Added Pin To Net: NetName=NetDRIVER1_4 Pin=DRIVER1-6
+Added Pin To Net: NetName=NetDRIVER1_6 Pin=DRIVER2-4
+Added Pin To Net: NetName=NetDRIVER2_4 Pin=DRIVER3-4
+Change Net Name : Old Net Name=NetDRIVER1_4 New Net Name=Net*_15
+Change Net Name : Old Net Name=NetDRIVER1_6 New Net Name=Net*_14
+Change Net Name : Old Net Name=NetDRIVER2_4 New Net Name=Net*_13
+Added Room: Name=Sheet1

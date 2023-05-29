@@ -1,0 +1,55 @@
+Removed Pin From Net: NetName=Net*_6 Pin=DRIVER 1-1
+Removed Pin From Net: NetName=Net*_7 Pin=DRIVER 1-2
+Removed Pin From Net: NetName=Net*_15 Pin=DRIVER 1-3
+Removed Pin From Net: NetName=Net*_14 Pin=DRIVER 2-1
+Removed Pin From Net: NetName=Net*_5 Pin=DRIVER 2-2
+Removed Pin From Net: NetName=Net*_39 Pin=DRIVER 2-3
+Removed Pin From Net: NetName=Net*_37 Pin=DRIVER 3-1
+Removed Pin From Net: NetName=Net*_38 Pin=DRIVER 3-2
+Removed Pin From Net: NetName=Net*_13 Pin=DRIVER 3-3
+Removed Member From Class: ClassName=Sheet1 Member=DRIVER 1
+Removed Member From Class: ClassName=Sheet1 Member=DRIVER 2
+Removed Member From Class: ClassName=Sheet1 Member=DRIVER 3
+Added Component: Designator=DRIVER1(XH2.54M-6)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001972"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 6P XH2.54-6P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=DRIVER2(XH2.54M-6)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001972"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 6P XH2.54-6P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=DRIVER3(XH2.54M-6)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001972"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 6P XH2.54-6P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=DRIVER1-1
+Added Pin To Net: NetName=Net*_6 Pin=DRIVER1-2
+Added Pin To Net: NetName=+5 Pin=DRIVER1-3
+Added Pin To Net: NetName=Net*_15 Pin=DRIVER1-4
+Added Pin To Net: NetName=+5 Pin=DRIVER1-5
+Added Pin To Net: NetName=Net*_7 Pin=DRIVER1-6
+Added Pin To Net: NetName=+5 Pin=DRIVER2-1
+Added Pin To Net: NetName=Net*_39 Pin=DRIVER2-2
+Added Pin To Net: NetName=+5 Pin=DRIVER2-3
+Added Pin To Net: NetName=Net*_14 Pin=DRIVER2-4
+Added Pin To Net: NetName=+5 Pin=DRIVER2-5
+Added Pin To Net: NetName=Net*_5 Pin=DRIVER2-6
+Added Pin To Net: NetName=+5 Pin=DRIVER3-1
+Added Pin To Net: NetName=Net*_37 Pin=DRIVER3-2
+Added Pin To Net: NetName=+5 Pin=DRIVER3-3
+Added Pin To Net: NetName=Net*_13 Pin=DRIVER3-4
+Added Pin To Net: NetName=+5 Pin=DRIVER3-5
+Added Pin To Net: NetName=Net*_38 Pin=DRIVER3-6
+Added Member To Class: ClassName=Sheet1 Member=Component DRIVER1 Header 6P 2.54 Duc Thang
+Added Member To Class: ClassName=Sheet1 Member=Component DRIVER2 Header 6P 2.54 Duc Thang
+Added Member To Class: ClassName=Sheet1 Member=Component DRIVER3 Header 6P 2.54 Duc Thang
+Added Room: Name=Sheet1
